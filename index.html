@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <header class="bg-dark sticky-top">
+
+    <header class="sticky-top" id="header">
         <div class="logo px-3">
             <a href="#">
                 <img width="110px" src="./static/image/logo_portifolio_png(Withe).png" alt="Logo Vitor Zucon (Black)">
@@ -31,43 +32,56 @@
                         <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"
                             aria-label="Close "></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white px-sm-3 px-lg-1" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Projetos</a>
-                            </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Cursos</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Certificados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Contato</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Sobre</a>
-                            </li>
-                            <li class="nav-item align-items-center">
-                            </li>
-                        </ul>
+                    <div class="offcanvas-body justify-content-between flex-sm-column flex-lg-row">
+                        <div class="mx-lg-5">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Projetos</a>
+                                </li>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Certificados e Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Sobre mim</a>
+                                </li>
+                                <li class="nav-item align-items-center">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="switch-theme justify-content-sm-center">
+                            <img height="25px" src="./static/icons/icons8-lua-crescente-50 (DarkMode).png" alt="">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                            <img height="25px" src="./static/icons/icons8-verão-50(DarkMode).png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="switch-theme">
-                <img height="25px" src="./static/icons/icons8-verão-50(DarkMode).png" alt="">
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <img height="25px" src="./static/icons/icons8-lua-crescente-50 (DarkMode).png" alt="">
-            </div>
         </nav>
     </header>
+    <main>
+        <div class="imagem-fundo">
+        </div>
+        <div class="fundo-main bg-dark">
+
+        </div>
+    </main>
+    <footer class="bg-dark">
+        <div id="copy">
+            <p class="text-secondary"> &copy; 2023 Copyright: <a href="#"
+                    class="fw-bold text-decoration-none text-secondary">Vitor
+                    Zucon</a></p>
+        </div>
+        <div class="contato">
+            <a href="" class="text-secondary text-decoration-none">Linkedin</a>
+            <a href="" class="text-secondary text-decoration-none">GitHub</a>
+            <a href="" class="text-secondary text-decoration-none">Gmail</a>
+            <a href="" class="text-secondary text-decoration-none">Telegram</a>
+        </div>
+    </footer>
 
     <script src="./static/js/bootstrap.min.js"></script>
 </body>

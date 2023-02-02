@@ -5,7 +5,9 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid rgb(0, 0, 0);
+    background: -moz-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 0%,rgb(0, 0, 0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%,rgb(0, 0, 0) 100%);
 }
 
 nav ul li a{
@@ -18,8 +20,9 @@ nav ul li a{
                 2px 0px 0px rgb(0, 0, 0);
 }
 
-nav ul li a:hover{
-    background-color: rgb(95, 95, 95);
+nav ul li a:hover, .active{
+    background-color: rgba(0, 0, 0, 0.537);
+    text-shadow: none;
 }
 
 /* The switch - the box around the slider */
@@ -105,4 +108,57 @@ input:hover:checked + .slider:before {
     flex-direction: row;
     align-items: center;
     gap: .5rem;
+}
+
+/* Main ----------------------------------------------- */
+
+.imagem-fundo{
+    position: relative;
+    top: -70px;
+    margin: 0 auto;
+    width: 100vw;
+    height: 60vh;
+    background: url("../gifs/background.gif");
+    background-position: center;
+}
+
+.imagem-fundo::after{
+    background: linear-gradient(to bottom, transparent 0%,#141619 100%);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.fundo-main{
+    width: 100vw;
+}
+
+/* Foooter ----------------------------------------------- */
+footer,.contato, #copy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3rem 2rem;
+    align-items: center;
+}
+
+#copy p{
+    margin: 0 ;
+}
+.contato{
+    font-weight: 700;
+    width: 40vw;
+}
+
+footer a{
+    color: rgb(98, 99, 112);
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
