@@ -5,12 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="./static/css/normalize.css">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
     <title>Home - Portifólio</title>
 </head>
 
 <body>
+    <header class="bg-dark sticky-top">
+        <div class="logo">
+            <a href="#">
+                <img width="110px" src="./static/image/logo_portifolio_png(Withe).png" alt="Logo Vitor Zucon (Black)">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close "></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white px-sm-3 px-lg-1" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Projetos</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Cursos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Certificados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-sm-3 px-lg-1" href="#">Sobre</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <script src="./static/js/bootstrap.min.js"></script>
 </body>
 
 </html>

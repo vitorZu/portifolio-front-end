@@ -1,0 +1,17 @@
+/* Header ----------------------------------------------- */
+
+header{
+    padding: .3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    border-radius: .2rem;
+    margin: 0 0.3rem;
+}
+
+nav ul li a:hover{
+    background-color: rgb(95, 95, 95);
+}
