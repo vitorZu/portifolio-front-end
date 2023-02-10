@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/normalize.css">
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/css/style.css">
+    <script defer src="./static/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="./static/icons/favicon-32x32.png" type="image/x-icon">
     <title>Home - Portifólio</title>
 </head>
 
@@ -16,7 +17,7 @@
     <header class="sticky-top" id="header">
         <div class="logo px-3">
             <a href="#">
-                <img width="110px" src="./static/image/logo_portifolio_png(Withe).png" alt="Logo Vitor Zucon (Black)">
+                <img width="80px" src="./static/image/logo_portifolio_png(White).png" alt="Logo Vitor Zucon (Black)">
             </a>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top px-lg-3">
@@ -49,13 +50,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="switch-theme justify-content-sm-center">
-                            <img height="25px" src="./static/icons/icons8-lua-crescente-50 (DarkMode).png" alt="">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-                            <img height="25px" src="./static/icons/icons8-verão-50(DarkMode).png" alt="">
+                        <div class="switch-theme" id="btnSwitchTheme" name="btnSwitchTheme">
+                            <img height="25px" src="./static/icons/moon.svg" alt="Icon para trocar de tema">
                         </div>
                     </div>
                 </div>
@@ -63,27 +59,43 @@
         </nav>
     </header>
     <main>
-        <div class="imagem-fundo">
+        <div class="imagem-fundo pc"></div>
         </div>
-        <div class="fundo-main bg-dark">
+        <div class="">
 
         </div>
     </main>
+    <hr>
     <footer class="bg-dark">
         <div id="copy">
             <p class="text-secondary"> &copy; 2023 Copyright: <a href="#"
-                    class="fw-bold text-decoration-none text-secondary">Vitor
-                    Zucon</a></p>
+                    class="fw-bold text-decoration-none text-secondary">Vitor Zucon</a></p>
         </div>
         <div class="contato">
-            <a href="" class="text-secondary text-decoration-none">Linkedin</a>
-            <a href="" class="text-secondary text-decoration-none">GitHub</a>
-            <a href="" class="text-secondary text-decoration-none">Gmail</a>
-            <a href="" class="text-secondary text-decoration-none">Telegram</a>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <ul class="navbar-collapse">
+                    <li class="nav-item">
+                        <div>
+                            <img height="15px" src="./static/icons/linkedin.svg" alt="icon linkedin">
+                            <a href="" class=" text-secondary text-decoration-none">Linkedin</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <img height="15px" src="./static/icons/github.svg" alt="icon linkedin">
+                        <a href="" class=" text-secondary text-decoration-none">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <img height="15px" src="./static/icons/gmail.svg" alt="icon linkedin">
+                        <a href="" class=" text-secondary text-decoration-none">Gmail</a>
+                    </li>
+                    <li class="nav-item">
+                        <img height="15px" src="./static/icons/telegram.svg" alt="icon linkedin">
+                        <a href="" class=" text-secondary text-decoration-none">Telegram</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </footer>
-
-    <script src="./static/js/bootstrap.min.js"></script>
 </body>
 
 </html>
